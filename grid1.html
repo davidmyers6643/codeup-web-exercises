@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: darkolivegreen;
+        }
+        .container {
+            background-color: #3B94D9;
+            width: 80%;
+            margin: 0px auto;
+            height: 100vh;
+            max-width: 1200px;
+        }
+        .one-third {
+            width: 33.33%;
+        }
+        .one-half {
+            width: 50%;
+        }
+        .row {
+            width: 100%;
+        }
+        .column {
+            float: left;
+        }
+        @media screen and (min-width:768px) {}
+
+        /* Medium devices (desktops, 992px and up) */
+        @media screen and (min-width:992px) { /* ... */ }
+
+        /* Large devices (large desktops, 1200px and up) */
+        @media screen and (min-width:1200px) { /* ... */ }
+
+        }
+    </style>
+
+</head>
+<body>
+    <h1>3x3</h1>
+        <div class="container">
+
+            <div class="row">
+                <div class="column one-third"><h1>First Name</h1></div>
+                <div class="column one-third"><h1>Last Name</h1></div>
+                <div class="column one-third"><h1>Age</h1></div>
+            </div>
+            <div class="row">
+                <div class="column one-third">David</div>
+                <div class="column one-third">Myers</div>
+                <div class="column one-third">38</div>
+            </div>
+            <div class="row">
+                <div class="column one-third">Mike</div>
+                <div class="column one-third">Myers</div>
+                <div class="column one-third">47</div>
+            </div>
+
+            <div class="row">
+                <div class="column one-half"><h1>Dogs</h1></div>
+                <div class="column one-half"><h1>Owners</h1></div>
+            </div>
+            <div class="row">
+                <div class="column one-half">Pringles</div>
+                <div class="column one-half">Victoria</div>
+            </div>
+        </div>
+
+
+
+
+</body>
+</html>

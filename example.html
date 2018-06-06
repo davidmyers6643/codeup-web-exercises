@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 
     <head>
         <meta charset="utf-8">
         <title>My first page!</title>
+        <style>
+            form {
+
+            }
+            label {
+                display: block;
+            }
+        </style>
 
     </head>
 
     <body>
     Hello and good day to you all!<br>
     <!--This is a comment that will not appear on the browser.-->
+    <form>
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text"/>
+    </br>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password">
+    </form>
 
 
     </body>

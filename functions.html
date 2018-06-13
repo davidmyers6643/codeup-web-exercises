@@ -1,0 +1,78 @@
+<DOCTYPE html>
+    <html>
+        <head></head>
+        <body>
+            <h1>FUNCTIONS</h1>
+
+            <script>
+                // function welcome(greeting) {
+    // return greeting;
+    // }
+    //
+    //             var welcome = function(greetings) {
+    //                 return (greetings);
+    //             }
+    //             var hello = welcome;
+    //
+    //             console.log(hello('Welcome!'));
+    //
+    //
+    //
+    //
+    //             function test(hello) {
+    //                 var (greetings) = (hello);
+    //                 return (greetings);
+    //             }
+    //
+    //             test('Howdy');
+    //
+    //             console.log(test(hello));
+    //
+    //
+    //
+    //
+    //
+    //             // function addTwo(number) {
+    //             //     var total1 = number + 2;
+    //             //     return total1;
+    //             // }
+    //             // 'make sure function has a "return total" instead of console.log'
+    //
+    //             // console.log(addTwo(2));
+    //
+    //             function returnFive() {
+    //                 return 5;
+    //             }
+    //             function addTwo(number) {
+    //                 return number(+2);
+    //
+    //                 addTwo(5);
+    //
+    //                 console.log(addTwo(returnFive));
+    //             }
+
+
+
+
+                var globalVar = "Looking, I'm Global!";
+                var localVar = "Look, I'm Local!";
+
+                function scopeExample() {
+
+                    alert(localVar);
+                    alert(globalVar);
+                    console.log(localVar);
+                    return localVar;
+
+                }
+
+                console.log(scopeExample());
+
+                // ----------------------------------IIEF-----------------------
+
+                (function () {
+
+                })();
+            </script>
+        </body>
+    </html>

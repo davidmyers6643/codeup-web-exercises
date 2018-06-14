@@ -32,25 +32,37 @@
         "use strict";
         (function(){
 
-        var firstName = prompt('What is your name?');
+        // var firstName = prompt('What is your name?');
+        //
+        // var age = prompt('Please enter your actual age.');
 
-        var age = prompt('Please enter your actual age.');
+        function makeUsername(firstName, age) {
 
-        function makeUsername(name, age) {
 
-            var firstLetter = name.charAt(0);
+            var output;
 
-            var  nameLength =  name.length;
-
-            return nameLength + firstLetter + age;
+            output = firstName.length + firstName[0].toLowerCase() + age;
+            return output;
 
         }
 
-        alert('Your login is ' + makeUsername(firstName, age));
+        // alert('Your login is ' + makeUsername(firstName, age));
 
-        console.log(makeUsername(firstName, age));
+        console.log(makeUsername('Justin', 22));
+
+            function makeUsername(firstName, age) {
 
 
+                var output;
+
+                output = firstName.length + firstName[0].toLowerCase() + age;
+                return output;
+
+            }
+
+            // alert('Your login is ' + makeUsername(firstName, age));
+
+            console.log(makeUsername('Sandy', 25));
 
         })();
 

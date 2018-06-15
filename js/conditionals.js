@@ -17,26 +17,26 @@
  */
 
 if (confirm('Would you like to enter a number')) {
-    var txt = prompt('Please enter your contact number!');
-    if (txt % 2 === 0) {
+    var data = prompt('Please enter your random number!');
+    if (data % 2 === 0) {
         alert('Your number is "EVEN"!');
     } else {
         alert('Your number is "ODD"!');
     }
 
-    alert('Your number plus 100 is ' + (parseInt(txt) + 100));
+    alert('Your number plus 100 is ' + (parseInt(data) + 100));
 
-    if (txt >= 0) {
+    if (data >= 0) {
         alert('Your number is "POSITIVE"!');
     }
 
-     if (txt <= 0) {
+     if (data <= 0) {
         alert('Your number is "NEGATIVE"!');
      } else {
-         alert("You did not enter a number!");
+         alert('You did not enter a number!');
      }
 }
-console.log(txt);
+console.log(data);
 
 /* ########################################################################## */
 //
@@ -65,24 +65,24 @@ console.log(txt);
 //          * Test your function by passing various string literals to it and
 //          * console.logging the function's return value
 //          */
-// //
-// // var color = prompt('Pick a color, any color!');
-// //
-// // function analyzeColor(input) {
-// //     if (input === 'blue') {
-// //     alert('Blue is the color of the sky');
-// //  } else if (input === 'red') {
-// //      alert('Strawberries are red!');
-// //  } else if(input === 'cyan') {
-// //      alert('I don\'t know anything about cyan!');
-// //  }
-// //
-// //  return  (color);
-// // }
-// //
-// //
-// // console.log(analyzeColor(color));
 //
+var color = prompt('Pick a color, any color!');
+//
+function analyzeColor(input) {
+    if (input === 'blue') {
+    alert('Blue is the color of the sky');
+ } else if (input === 'red') {
+     alert('Strawberries are red!');
+ } else if(input === 'cyan') {
+     alert('I don\'t know anything about cyan!');
+ }
+
+ return  (color);
+}
+
+
+console.log(analyzeColor(color));
+  //
 // // Don't change the next two lines!
 // // These lines create two variables for you:
 // // - `colors`: a list of the colors of the rainbow

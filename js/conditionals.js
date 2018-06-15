@@ -16,27 +16,27 @@
  * Can you refactor your code to use functions?
  */
 
-if (confirm('Would you like to enter a number')) {
-    var data = prompt('Please enter your random number!');
-    if (data % 2 === 0) {
-        alert('Your number is "EVEN"!');
-    } else {
-        alert('Your number is "ODD"!');
-    }
-
-    alert('Your number plus 100 is ' + (parseInt(data) + 100));
-
-    if (data >= 0) {
-        alert('Your number is "POSITIVE"!');
-    }
-
-     if (data <= 0) {
-        alert('Your number is "NEGATIVE"!');
-     } else {
-         alert('You did not enter a number!');
-     }
-}
-console.log(data);
+// if (confirm('Would you like to enter a number')) {
+//     var data = prompt('Please enter your random number!');
+//     if (data % 2 === 0) {
+//         alert('Your number is "EVEN"!');
+//     } else {
+//         alert('Your number is "ODD"!');
+//     }
+//
+//     alert('Your number plus 100 is ' + (parseInt(data) + 100));
+//
+//     if (data >= 0) {
+//         alert('Your number is "POSITIVE"!');
+//     }
+//
+//      if (data <= 0) {
+//         alert('Your number is "NEGATIVE"!');
+//      } else {
+//          alert('You did not enter a number!');
+//      }
+// }
+// console.log(data);
 
 /* ########################################################################## */
 //
@@ -65,23 +65,25 @@ console.log(data);
 //          * Test your function by passing various string literals to it and
 //          * console.logging the function's return value
 //          */
+// //
+// var color = prompt('Pick a color, any color!');
+// //
+// function analyzeColor(input) {
+//     if (input === 'blue') {
+//         return input + ' is the color of the sky';
+//  } else if (input === 'red') {
+//         return input + ' is the color of strawberries.';
+//  } else if(input === 'cyan') {
+//         return 'I know nothing about ' + input + '!';
+//  } else {
+//         return input + ' is not a valid color';
+//     }
 //
-var color = prompt('Pick a color, any color!');
+//  return  (color);
+// }
 //
-function analyzeColor(input) {
-    if (input === 'blue') {
-    alert('Blue is the color of the sky');
- } else if (input === 'red') {
-     alert('Strawberries are red!');
- } else if(input === 'cyan') {
-     alert('I don\'t know anything about cyan!');
- }
-
- return  (color);
-}
-
-
-console.log(analyzeColor(color));
+//
+// console.log(analyzeColor(color));
   //
 // // Don't change the next two lines!
 // // These lines create two variables for you:
@@ -90,13 +92,13 @@ console.log(analyzeColor(color));
 // //                  will contain a different color everytime the page loads)
 //         var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 //         var randomColor = colors[Math.floor(Math.random() * colors.length)];
-//
-//         /**
-//          * TODO:
-//          * Pass the `randomColor` variable to your function and console.log the results.
-//          * You should see a different message everytime you refresh the page
-//          */
-//
+// //
+// //         /**
+// //          * TODO:
+// //          * Pass the `randomColor` variable to your function and console.log the results.
+// //          * You should see a different message everytime you refresh the page
+// //          */
+// //
 //         function rainbowColor(randcolor) {
 //             if (randcolor === randomColor) {
 //                 alert('Your random color is ' + randomColor);
@@ -106,11 +108,11 @@ console.log(analyzeColor(color));
 //         }
 //
 //         console.log(rainbowColor(randomColor));
-//
-//         /**
-//          * TODO:
-//          * Refactor your above function to use a switch-case statement
-//          */
+// //
+// //         /**
+// //          * TODO:
+// //          * Refactor your above function to use a switch-case statement
+// //          */
 //         switch (colors) {
 //             case (randomColor):
 //                 alert('Your random color is ' + randomColor);
@@ -126,8 +128,10 @@ console.log(analyzeColor(color));
 //  */
 //
 // /* ########################################################################## */
-//
-// /**
+// var userColors = prompt('Give me a color');
+//         var logs  = analyzeColor(userColors);
+// alert(logs);
+/**
 //  * TODO:
 //  * Suppose there's a promotion in Walmart, each customer is given a randomly
 //  * generated "lucky number" between 0 and 5. If your lucky number is 0 you have
@@ -145,7 +149,34 @@ console.log(analyzeColor(color));
 //  *
 //  * Test your function by passing it various values and checking for the expected
 //  * return value.
-//  */
+//  */function calculateTotal(luckyNumber, total) {
+    var discountedPrice;
+
+    switch (luckyNumber)  {
+        case 0:
+            discountedPrice = total;
+            break;
+        case 1:
+            discountedPrice = total * (0.90);
+            break;
+        case 2:
+            discountedPrice = total * (0.75);
+            break;
+        case 3:
+            discountedPrice = total * (0.65);
+            break;
+        case 4:
+            discountedPrice = total * (0.50);
+            break;
+        case 5:
+            discountedPrice = 0;
+            break;
+        default:
+            discountedPrice = 'Invalid number.';
+    }
+
+    return discountedPrice;
+}
 //
 // /**
 //  * TODO:
@@ -155,4 +186,20 @@ console.log(analyzeColor(color));
 //  * price before the discount was, and what their price after the discount is.
 //  */
 // // Generate a random number between 0 and 6
-// // var luckyNumber = Math.floor(Math.random() * 6);
+function genRnd() {
+    return Math.floor(Math.random() * 6);
+}
+
+
+var luckyNumber = genRnd();
+
+
+    console.log(luckyNumber);
+    console.log(calculateTotal(luckyNumber, 100));
+
+
+
+    luckyNumber = genRnd();
+
+    console.log(luckyNumber);
+    console.log(calculateTotal(luckyNumber, 200));

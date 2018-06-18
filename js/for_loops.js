@@ -4,11 +4,11 @@
 var input = prompt('pick a number!');
 
 
-function showMultiplicationTable() {
+// function showMultiplicationTable() {
     for ( var i = 1;i<=10;i++) {
         console.log(input + '*' + i + '=' + (input * i));
     }
-}return showMultiplicationTable(input);
+// }return showMultiplicationTable(input);
 
 
 // ----------------------------------------------------------

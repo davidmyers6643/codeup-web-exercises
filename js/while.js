@@ -28,9 +28,9 @@
 
         var conesToSell = Math.floor(Math.random() * 5) + 1;
 
-        if (conesToSell <= allCones) {
-            console.log('I sold ' + conesToSell);
-            allCones = allCones - conesToSell;
+        if (totalPerHour <= allCones) {
+            console.log('I sold ' + totalPerHour);
+            allCones = allCones - totalPerHour;
         } else if (allCones === 0) {
             console.log('I can go home');
         } else {

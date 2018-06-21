@@ -1,3 +1,7 @@
+(function() {
+    "use strict";
+//
+//
 // var teacher = {
 //     name: 'Barthalimule',
 //     company: 'Codeup',
@@ -76,8 +80,6 @@
      */
 
 
-    (function() {
-        "use strict";
 
         // var person = {
         //     firstName: 'Rick',
@@ -117,17 +119,27 @@
      * and console.log the relevant messages for each person
      */
 
-    var shoppers = [
-        {name: 'Cameron', amount: 180},
-        {name: 'Ryan', amount: 250},
-        {name: 'George', amount: 320}
-    ];
-
-    // if (shoppers.name >= 200) {
-    //     console.log('You get %12 off');
-    //     } else if (shoppers.name <= 200) {
-    //     console.log('you need to spend more');
-    // }
+    // var shoppers = [
+    //     {name: 'Cameron', amount: 180},
+    //     {name: 'Ryan', amount: 250},
+    //     {name: 'George', amount: 320}
+    // ];
+    //
+    //
+    // shoppers.forEach(function (shopper) {
+    //     // console.log(shopper.name);
+    //     var discount = 0;
+    //     if (shopper.amount > 200) {
+    //         discount = shopper.amount *.12;
+    //         // console.log('They get discount.')
+    //     }
+    //     //
+    //     var output = shopper.name;
+    //     output += ' amount: ' + shopper.amount;
+    //     output += ' discount: ' + discount;
+    //     output += ' total: ' + (shopper.amount - discount);
+    //     console.log(output);
+    //     });
 
 
     /** TODO:
@@ -142,31 +154,50 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+    //
+    // var books = [
+    //     {title: 'The Salmon of Doubt', author:{firstName: 'Douglas', lastName: 'Adams'}},
+    //     {title: 'Walkaway', author:{firstName: 'Cory', lastName: 'Doctorow'}},
+    //     {title: 'A brief History in Time', author:{firstName: 'Stephen', lastName: 'Hawking'}},
+    // ];
+    // console.log(books);
+
+    // for (var i = 0; i< books.length; i++){
+    //     console.log('Book # ' + (i + 1));
+    //     console.log('Title: ' + books[i].title);
+    //     console.log('Author: ' + books[i].author.firstName + ' ' + books[i].author.lastName);
+    //     console.log('---');
+    // }
+
+    // console.log('...');
+
+
+
 
     /**
-     * TODO:
-     * Loop through the books array and output the following information about
-     * each book:
-     * - the book number (use the index of the book in the array)
-     * - the book title
-     * - author's full name (first name + last name)
-     *
-     * Example Console Output:
-     *
-     *      Book # 1
-     *      Title: The Salmon of Doubt
-     *      Author: Douglas Adams
-     *      ---
-     *      Book # 2
-     *      Title: Walkaway
-     *      Author: Cory Doctorow
-     *      ---
-     *      Book # 3
-     *      Title: A Brief History of Time
-     *      Author: Stephen Hawking
-     *      ---
-     *      ...
-     */
+         * TODO:
+         * Loop through the books array and output the following information about
+         * each book:
+         * - the book number (use the index of the book in the array)
+         * - the book title
+         * - author's full name (first name + last name)
+         *
+         * Example Console Output:
+         *
+         *      Book # 1
+         *      Title: The Salmon of Doubt
+         *      Author: Douglas Adams
+         *      ---
+         *      Book # 2
+         *      Title: Walkaway
+         *      Author: Cory Doctorow
+         *      ---
+         *      Book # 3
+         *      Title: A Brief History of Time
+         *      Author: Stephen Hawking
+         *      ---
+         *      ...
+         */
 
     /**
      * Bonus:
@@ -178,5 +209,14 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+var random = Math.random();
+random *= 27;
+random = Math.floor(random);
+console.log(random);
+
 
 })();

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM: Query and Modify</title>
+</head>
+<body>
+
+<h1 id="main-header">Hello World!</h1>
+<ul>
+    <li data-dbid="1">Item 1</li>
+    <li data-dbid="2">Item 2</li>
+    <li data-dbid="3">Item 3</li>
+    <li data-dbid="4">Item 4</li>
+    <li data-dbid="5">Item 5</li>
+</ul>
+<h2 id="sub-header">Hello Again.</h2>
+<p class="sub-paragraph">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat. Duis aute irure dolor in
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+    culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+
+<button id="btn1">Test Button</button>
+<button id="btn2">Login</button>
+<button id="de-activeHover">Restore Text Size</button>
+
+
+
+<form name="login">
+    <div>
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text">
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password">
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+</form>
+
+
+<script>
+
+
+(function() {
+    "use strict";
+//
+//     var mainHeader = document.getElementById("main-header");
+//     mainHeader.innerHTML = 'JavaScript is cool';
+//
+//
+// // <!--// TODO: Uncomment the next line and get the sub header element by id-->
+//
+//     var subHeader = document.getElementById("sub-header");
+//     subHeader.style.color = 'blue';
+//
+//     var listItems = document.getElementsByTagName('li');
+// //
+// // <!--// TODO: Set text color on every other list item to grey-->
+// // <!--// TODO: Set text color of li with dbid = 1 to blue-->
+//
+//     listItems[0].style.color = 'blue';
+//
+//     for (var i = 0; i < listItems.length; i += 1) {
+//         if (listItems[i].getAttribute('data-dbid') === '1') {
+//         listItems[i].style.color = 'blue';
+//     }
+// else
+//     if (i % 2 !== 0) {
+//         listItems[i].style.color = 'gray';
+//     }
+// }
+//
+//  var subParagraphs  = document.getElementsByClassName('sub-paragraph');
+//
+// subParagraphs[0].innerHTML = "<strong>Mission Accomplished!</strong>";
+
+
+// get the "username" input
+    var username = document.getElementById('username');
+// log the value of the "username" input
+        console.log(username);
+//     username.addEventListener('click', function () {
+//
+//         console.log('click');
+//     });
+//
+username.addEventListener('click', function () {
+
+    console.log('click');
+});
+
+// <!--<h1 id="main-heading">Hello World!</h1>-->
+// <!--<div id="main-section">-->
+//     <!--<p>Paragraph 1</p>-->
+//     <!--<p>Paragraph 2</p>-->
+// <!--</div>-->
+// <!--<script>-->
+//     <!--"use strict";-->
+//     <!--(function() {-->
+//         <!--// Get the main heading h1 by id-->
+//         <!--var mainHeading = document.getElementById('main-heading');-->
+//
+//         <!--console.log(mainHeading); // Prints Hello World!-->
+//
+//         <!--// Assign a new value to the inner HTML of the main heading-->
+//         <!--mainHeading.innerHTML = "Hello Codeup!";-->
+//
+//         <!--console.log(mainHeading.innerHTML); // Prints Hello Codeup!-->
+//
+//         <!--// Get the main section div by id-->
+//         <!--var mainSection = document.getElementById('main-section');-->
+//
+//         <!--console.log(mainSection.innerHTML);-->
+//         <!--// Prints-->
+//         <!--// <p>Paragraph 1</p>-->
+//         <!--// <p>Paragraph 2</p>-->
+    var para = document.getElementsByTagName('p')[0];
+
+        function  makeFancyPara() {
+            console.log('Fire');
+            para.style['font-size'] = '1.5em';
+            para.style.color = 'brown';
+            para.style.fontFamily = 'Comic Sans MS';
+    }
+    para.addEventListener('mouseover', makeFancyPara);
+
+    // document.addEventListener('click', makeFancyPara);
+
+    document.getElementById('de-activeHover');
+
+    removeEventListener('click', function() {
+        para.removeEventListener('mouseover', makeFancyPara);
+    })
+
+    // })
+})();
+
+</script>
+
+
+
+
+</body>
+</html>

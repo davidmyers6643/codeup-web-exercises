@@ -15,38 +15,38 @@
 //
 //exercise 3--------------------------------------\/
 
-    //
-    // for (var i = 0; i <= 10; i += 1) {
-    //
-    //     var randonmNumber = Math.floor(Math.random() * (200 - 20 + 1)) + 20;
-    //     var message;
-    //
-    //     if (randonmNumber % 2 === 0) {
-    //         message = randonmNumber + ' is even.';
-    //     } else {
-    //         message = randonmNumber + ' is odd.';
-    //     }
-    //     console.log(message);
-    //
-    // }
+
+    for (var i = 0; i <= 10; i += 1) {
+
+        var randonmNumber = Math.floor(Math.random() * (200 - 20 + 1)) + 20;
+        var message;
+
+        if (randonmNumber % 2 === 0) {
+            message = randonmNumber + ' is even.';
+        } else {
+            message = randonmNumber + ' is odd.';
+        }
+        console.log(message);
+
+    }
 // ---------------------------------------------------------------
 
-
-    // exercise 4--------------------------------------------
-
-     for (var i = 1; i < 10; i += 1) {
-            var output = '';
-            for (var row = 1; row <= i; row += 1) {
-                output +=  i;
-            }
-            console.log(output);
-     }
-
-     // -----------------------------exercise 5---------------------
-
-    for (var x = 100; x > 0; x = x - 5) {
-        console.log(x);
-    }
+    //
+    // // exercise 4--------------------------------------------
+    //
+    //  for (var i = 1; i < 10; i += 1) {
+    //         var output = '';
+    //         for (var row = 1; row <= i; row += 1) {
+    //             output +=  i;
+    //         }
+    //         console.log(output);
+    //  }
+    //
+    //  // -----------------------------exercise 5---------------------
+    //
+    // for (var x = 100; x > 0; x = x - 5) {
+    //     console.log(x);
+    // }
 
 
     // -------------------------------------exercise 6---------------

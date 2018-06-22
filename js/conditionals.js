@@ -15,7 +15,7 @@
  *
  * Can you refactor your code to use functions?
  */
-
+//
 // if (confirm('Would you like to enter a number')) {
 //     var data = prompt('Please enter your random number!');
 //     if (data % 2 === 0) {

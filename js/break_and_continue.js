@@ -1,8 +1,7 @@
 
 
 // -------------------------exercise 6---------------------------
-var userNumb = prompt('Pick an ODD number that wee will skip.')
-
+var userNumb = prompt('Pick an ODD number between 1-50 that we will skip.');
 
 for (var  i = 1; i <= 50 ; i += 1) {
 

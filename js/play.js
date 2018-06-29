@@ -3,7 +3,7 @@ $(function () {
         $('#playOutput').text($('#playInput').val());
     });
 // $('p').css('width', '700px');
-$('.codeup').css('border', '1px solid red');
+$('.codeup').css('border', '1px solid green');
 //
 // // alert($('#double').click(function () {
 // //     alert($(this).text())

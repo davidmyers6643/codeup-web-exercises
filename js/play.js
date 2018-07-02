@@ -62,7 +62,7 @@ alert($('h1').text());
 //
 //     }
 
-});
+// });
 
 
 // window.onload = function() {

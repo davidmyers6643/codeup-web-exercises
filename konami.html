@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><!-- TODO: put your title here --></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <!-- Your custom styles go here -->
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+        #container {
+            background-color: ;
+            width: 100%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        h5 {
+            text-align: center;
+        }
+
+
+        .btn-class {
+            float: left;
+            background-color: #f8f9fa;
+            font-size: smaller;
+            position: relative;
+            left: -40px;
+        }
+        .btn-outline-success {
+            position: relative;
+            right: 0px;
+        }
+        .form-inline {
+            margin-left: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+
+    <img src="gif/dog-movie.gif">
+
+
+
+    <!-- Main page content -->
+    <div id="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Pizza World</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Online Order<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Zipcode" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Areas Near You</button>
+
+                    </form>
+
+                </ul>
+
+                <button class="btn btn-class"><img src="img/signin.svg" alt="signin">Sign up</button>
+
+            </div>
+        </nav>
+        <div class="jumbotron jumbotron-fluid d-none d-sm-block">
+            <div class="container">
+                <h1 class="display-4">Welcome To Pizza World</h1>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                <span class="badge badge-light">1</span>
+                <span class="sr-only">hello!</span>Size and Crust Type</a>
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+                <span class="badge badge-light">2</span>
+                <span class="sr-only">Yoo-Hoo!</span>Cheese and Sauce Type</a>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
+                <span class="badge badge-light">3</span>
+                <span class="sr-only">Peek-A-Boo</span>Meats</a>
+            <a class="nav-item nav-link" id="nav-text-tab" data-toggle="tab" href="#nav-text" role="tab" aria-controls="nav-text" aria-selected="false">
+                <span class="badge badge-light">4</span>
+                <span class="sr-only">Good-Bye</span>Vegetables</a>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="card text-right" style="width: 35rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Choose Size and Crust</h5>
+
+                    <div class="card" style="width: 32.5rem;">
+                        <div class="card-header">
+                            <div class="tab-content">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="inputGroupSelect01">Size</label>
+                                    </div>
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected disabled>Choose Size...</option>
+                                        <option value="1">Small (10")</option>
+                                        <option value="2">Medium (12")</option>
+                                        <option value="3">Large (14")</option>
+                                        <option value="4">X-Large (16")</option>
+                                    </select>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="inputGroupSelect02">Crust Type</label>
+                                    </div>
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                        <option selected disabled>Choose Crust Type...</option>
+                                        <option value="1">Thin and Crispy</option>
+                                        <option value="2">Hand Tossed</option>
+                                        <option value="3">Deep Dish (+$1.00)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-primary">Next</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade show" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="card text-right" style="width: 35rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Choose Cheese and Sauce</h5>
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-header">
+                            <div class="tab-content">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="inputGroupSelect02">Cheese and Sauce</label>
+                                    </div>
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                        <option selected disabled>Choose Cheese Amount...</option>
+                                        <option value="1">None</option>
+                                        <option value="2">Light</option>
+                                        <option value="3">Regular</option>
+                                        <option value="4">Extra (+$1.00)</option>
+                                    </select>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="inputGroupSelect01">Sauce Type</label>
+                                    </div>
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                        <option selected disabled>Choose Sauce Type...</option>
+                                        <option value="1">None</option>
+                                        <option value="2">Marinara</option>
+                                        <option value="3">Alfredo</option>
+                                    </select>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="inputGroupSelect01">Sauce Amount</label>
+                                    </div>
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                        <option selected disabled>Choose Sauce Amount...</option>
+                                        <option value="1">None</option>
+                                        <option value="2">Light</option>
+                                        <option value="3">Regular</option>
+                                        <option value="4">Extra</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Next</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="card" style="width: 30rem;">
+                <div class="card-header">Meat
+                    <div class="tab-content">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Italian Sausage</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected disabled>Choose Portion...</option>
+                                <option value="1">Whole</option>
+                                <option value="2">1/2 Left</option>
+                                <option value="3">1/2 Right</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Pork Sausage</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected disabled>Choose Portion...</option>
+                                <option value="1">Whole</option>
+                                <option value="2">1/2 Left</option>
+                                <option value="3">1/2 Right</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Pepperoni</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected disabled>Choose Portion...</option>
+                                <option value="1">Whole</option>
+                                <option value="2">1/2 Left</option>
+                                <option value="3">1/2 Right</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Ham</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected disabled>Choose Portion...</option>
+                                <option value="1">Whole</option>
+                                <option value="2">1/2 Left</option>
+                                <option value="3">1/2 Right</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Hamburger</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected disabled>Choose Portion...</option>
+                                <option value="1">Whole</option>
+                                <option value="2">1/2 Left</option>
+                                <option value="3">1/2 Right</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Anchovies</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected disabled>Choose Portion...</option>
+                                <option value="1">Whole</option>
+                                <option value="2">1/2 Left</option>
+                                <option value="3">1/2 Right</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Chicken</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected disabled>Choose Portion...</option>
+                                <option value="1">Whole</option>
+                                <option value="2">1/2 Left</option>
+                                <option value="3">1/2 Right</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="nav-text" role="tabpanel" aria-labelledby="nav-text-tab">
+            <div class="card" style="width: 30rem;">
+                <div class="card-header">Vegetable
+                    <div class="tab-content">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Mushrooms</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected disabled>Choose Portion...</option>
+                                <option value="1">Whole</option>
+                                <option value="2">1/2 Left</option>
+                                <option value="3">1/2 Right</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Red Onions</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected disabled>Choose Portion...</option>
+                                <option value="1">Whole</option>
+                                <option value="2">1/2 Left</option>
+                                <option value="3">1/2 Right</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Green Peppers</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected disabled>Choose Portion...</option>
+                                <option value="1">Whole</option>
+                                <option value="2">1/2 Left</option>
+                                <option value="3">1/2 Right</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Banana Peppers</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected disabled>Choose Portion...</option>
+                                <option value="1">Whole</option>
+                                <option value="2">1/2 Left</option>
+                                <option value="3">1/2 Right</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Black Olives</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected disabled>Choose Portion...</option>
+                                <option value="1">Whole</option>
+                                <option value="2">1/2 Left</option>
+                                <option value="3">1/2 Right</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Spinach</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected disabled>Choose Portion...</option>
+                                <option value="1">Whole</option>
+                                <option value="2">1/2 Left</option>
+                                <option value="3">1/2 Right</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Tomatoes</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected disabled>Choose Portion...</option>
+                                <option value="1">Whole</option>
+                                <option value="2">1/2 Left</option>
+                                <option value="3">1/2 Right</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="js/jquery-2.x-git.js"></script>
+    <!--<script src="/js/jquery.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script>
+    "use strict";
+    $('img').hide();
+    $(document).keyup(function(e) {
+
+        var kkeys = [], konami = "38,38,40,40";
+
+        $(document).keydown(function (e) {
+
+            kkeys.push(e.keyCode);
+
+            if (kkeys.toString().indexOf(konami) >= 0) {
+                $('div').hide();
+
+                // $(document).unbind('keydown',arguments.callee);
+
+                // do something awesome
+                $('img').show().css('width', '100%').css('height', '100%')
+
+            }
+        });
+        var kkeys2 = [], konami2 = "40,40,38,38";
+
+        $(document).keydown(function (e) {
+
+            kkeys2.push(e.keyCode);
+
+            if (kkeys2.toString().indexOf(konami2) >= 0) {
+                $('img').hide();
+
+                // $(document).unbind('keydown',arguments.callee);
+
+                // do something awesome
+                $('div').show();
+
+            }
+
+        });
+
+
+        console.log(e.keyCode);
+    });
+
+</script>
+
+</body>
+</html>

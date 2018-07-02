@@ -75,8 +75,9 @@ $(function () {
     
 
 
-$('#details').click(function() {
-    $('dd').toggleClass('invisible');
+$('dt').click(function() {
+
+    $(this).next().toggleClass('invisible');
     });
 
 $('dt').click(function() {

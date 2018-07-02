@@ -1,0 +1,11 @@
+.invisible{
+    display: none;
+}
+
+.highlighted{
+    background-color: yellow;
+}
+
+.cursive {
+    font-style: italic;
+}

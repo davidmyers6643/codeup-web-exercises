@@ -411,34 +411,30 @@
 
         });
 
-        // var kkeys3 = [], konami3 = "37,38,39,40";
-        //
-        // $(document).keydown(function (e) {
-        //
-        //     kkeys3.push(e.keyCode);
-        //
-        //     if (kkeys3.toString().indexOf(konami3) >= 0) {
-                // $().load('<a href=www.google.com></a>');
+        var kkeys3 = [], konami3 = "37,38,39,40";
 
+        $(document).keydown(function (e) {
 
+            kkeys3.push(e.keyCode);
 
+            if (kkeys3.toString().indexOf(konami3) >= 0) {
+                window.location.href = "http://www.google.com";
 
-    //         $.prototype.anchor = function() {
-    //             if(this[0].textContent) {
-    //                 this.html();
-    //                 this[0].textContent.replace('a', '<a href = www.google.com></a>')
-    //                     .find('a');
-    //                     this.href = this.textContent;
-    //                     return this;
-    //             }
-    //         }
-    //             // $(document).unbind('keydown',arguments.callee);
-    //             console.log('hello');
-    //         }
-    //
-    //
-    //
-    //         });
+            }
+        });
+
+        var kkeys4 = [], konami4 = "67,70,84,54,89,72,78";
+
+        $(document).keydown(function (e) {
+
+            kkeys4.push(e.keyCode);
+
+            if (kkeys4.toString().indexOf(konami4) >= 0) {
+                window.location.href = "http://www.google.com";
+
+            }
+        });
+
     //
         console.log(e.keyCode);
     });

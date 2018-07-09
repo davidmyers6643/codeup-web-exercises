@@ -1,11 +1,26 @@
-.invisible{
+.invisible {
     display: none;
 }
 
-.highlighted{
+.highlighted {
     background-color: yellow;
 }
 
 .cursive {
     font-style: italic;
+}
+
+.headQ {
+    font-weight: bold;
+}
+
+.qsBody{
+    display: none;
+}
+
+.fontWeight {
+    font-weight: bold;
+}
+.liColor {
+    color: blue;
 }

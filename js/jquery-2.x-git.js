@@ -1,4 +1,4 @@
-/*!
+''/*!
  * jQuery JavaScript Library v2.2.5-pre b14ce54334a568eaaa107be4c441660a57c3db24
  * http://jquery.com/
  *

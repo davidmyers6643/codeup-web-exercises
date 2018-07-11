@@ -24,22 +24,28 @@
 
         <h3>San Antonio Area</h3>
     </main>
-    <div id="weatherBox1"></div>
-    <div id="weatherBox2"></div>
-    <div id="weatherBox3"></div>
-    <div id="weatherBox4"></div>
+    <div id="box">
+        <div id="weatherBox1" class='boxes'></div>
+        <div id="weatherBox2" class='boxes'></div>
+        <div id="weatherBox3" class='boxes'></div>
+
+    </div>
 
     <div id="map-canvas"></div>
 
 
     <script src=./js/jquery-2.x-git.js></script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu5C76R0Mw2HFXJRB_FHJONQUEZfdz4VU&callback=initMap">
-            </script>
+
     <script>
+
+        function initMap() {
+
+            var map = new google.maps.Map(
+                document.getElementById('map-canvas'), {zoom: 4, center: {lat:29.426791, lng:-98.48602}
+                });
+        }
     $(document).ready(function () {
         'use strict';
-
 
 
 
@@ -55,7 +61,8 @@
             if (i > 17 ) {
                 break;
             }
-               output += '<h4>' + data.list[i].main.temp_max + '/' + data.list[i].main.temp_min + '</h4>';
+               output += '<h4>' + data.list[i].main.temp_max + '<span>&#176;</span>/' + data.list[i].main.temp_min + '<span>&#176;</span></h4>';
+               output += '<img src= http://openweathermap.org/img/w/' + data.list[i].weather[0].icon + '.png>';
                output += '<p>' + data.list[i].weather[0].main + ': ' + data.list[i].weather[0].description + '</p>';
                output += '<p><h3>Humidity:  </h3>' + data.list[i].main.humidity + '</p>';
                output += '<p>Wind: ' + data.list[i].wind.speed + '</p>';
@@ -87,7 +94,9 @@
     });
 
 </script>
-
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNbUGQhFWUS8yi-XQ21ngugn6D45erQYM&callback=initMap" async defer></script>-->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxIPbNd4ljI6NdSyP5ugk4XoKDzw2VEZM&callback=initMap" async defer></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNbUGQhFWUS8yi-XQ21ngugn6D45erQYM&callback=initMap" async defer></script>
 
 </body>
 </html>

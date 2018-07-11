@@ -1,37 +1,32 @@
-div {
-    display: inline-block;
+#box {
+    display: flex;
 }
 
 body {
+    background-image: url("../img/blue_sky_and_green.jpg");
+    background-attachment: fixed;
+    background-color: #cccccc;
+    background-size: 100% 100%;
+
     text-align: center;
 }
+
 #map-canvas {
-    width: 200px;
-    height: 100px;
-    background-color: gray;
+    margin: 50px auto;
+    width: 60%;
+    height: 300px;
+    /*background-color: gray;*/
+    border-radius: 7%;
+    border: 3px #479b4f solid;
+
 }
 
-#weatherBox1 {
+.boxes {
     width: 300px;
     height: 200px;
-    background-color: burlywood;
-    border: 2px black solid;
-    margin: 0px 80px;
-}
-
-#weatherBox2 {
-    width: 300px;
-    height: 200px;
-    background-color: burlywood;
-    border: 2px black solid;
-    margin: 0px 38px;
-}
-
-#weatherBox3 {
-    width: 300px;
-    height: 200px;
-    background-color: burlywood;
-    border: 2px black solid;
+    background-image: url("../img/blue_sky.jpg");
+    background-color: #cccccc;
+    border: 2px lightskyblue solid;
     margin: 0px 80px;
 }
 

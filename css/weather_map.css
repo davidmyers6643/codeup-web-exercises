@@ -27,6 +27,7 @@ body {
     background-image: url("../img/blue_sky.jpg");
     background-size: cover;
     background-color: #cccccc;
+    border-radius: 7%;
     border: 2px #479b4f solid;
     margin: 0px 80px;
     float: left;
@@ -43,4 +44,11 @@ main {
     color: thistle;
     text-decoration: underline overline;
 
+}
+input {
+    text-align: center;
+    border-radius: 7%;
+}
+button {
+    border-radius: 7%;
 }

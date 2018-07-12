@@ -1,102 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-
-    <title>Weather Map Project</title>
-
-
-    <link
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-            crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/weather_map.css">
-
-
-
+    <title>Example jQuery Page</title>
 </head>
 <body>
-    <main class="container">
-         <h1>Weather Map Project Lecture</h1>
+<h1 id="codeup">Hello Codeup</h1>
 
-        <h3>San Antonio Area</h3>
-    </main>
-    <div id="box">
-        <div id="weatherBox1" class='boxes'></div>
-        <div id="weatherBox2" class='boxes'></div>
-        <div id="weatherBox3" class='boxes'></div>
+<script src="./js/jquery-2.x-git.js"></script>
+<script>
+    "use strict";
 
-    </div>
-
-    <div id="map-canvas"></div>
-
-
-    <script src=./js/jquery-2.x-git.js></script>
-
-    <script>
-
-        function initMap() {
-
-            var map = new google.maps.Map(
-                document.getElementById('map-canvas'), {zoom: 4, center: {lat:29.426791, lng:-98.48602}
-                });
-        }
-    $(document).ready(function () {
-        'use strict';
-
-
-
-
-       var jqXhr = $.get('http://api.openweathermap.org/data/2.5/forecast',{
-        APPID: '4694d4d4e2bdd262873ba522f18e678e',
-        id: 4726206,
-        units: 'imperial'
-    });
-       jqXhr.done(function(data) {
-           for(var i = 0; i < data.list.length; i+= 8){
-            var output = '';
-            if (i > 17 ) {
-                break;
+    $(document).ready(function() {
+        $('#codeup').hover(
+            function() {
+                $(this).css('background-color', '#FF0');
+            },
+            function() {
+                $(this).css('background-color', '#FFF');
             }
-               output += '<h4>' + data.list[i].main.temp_max + '<span>&#176;</span>/' + data.list[i].main.temp_min + '<span>&#176;</span></h4>';
-               output += '<img src= http://openweathermap.org/img/w/' + data.list[i].weather[0].icon + '.png>';
-               output += '<p>' + data.list[i].weather[0].main + ': ' + data.list[i].weather[0].description + '</p>';
-               output += '<p><h3>Humidity:  </h3>' + data.list[i].main.humidity + '</p>';
-               output += '<p>Wind: ' + data.list[i].wind.speed + '</p>';
-               output += '<p>Pressure: ' + data.list[i].main.pressure + '</p>';
-
-               if (i === 0) {
-                   $('#weatherBox1').html(output);
-               }
-
-               if (i === 8) {
-                   $('#weatherBox2').html(output);
-               }
-
-               if (i === 16) {
-                   $('#weatherBox3').html(output);
-               }
-               // if (i === 24) {
-               //     $('#weatherBox4').html(output);
-               // }
-
-
-
-               console.log(data);
-           }
-
-
-
-       });
+        );
     });
-
 </script>
-    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNbUGQhFWUS8yi-XQ21ngugn6D45erQYM&callback=initMap" async defer></script>-->
-    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxIPbNd4ljI6NdSyP5ugk4XoKDzw2VEZM&callback=initMap" async defer></script>-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNbUGQhFWUS8yi-XQ21ngugn6D45erQYM&callback=initMap" async defer></script>
-
 </body>
 </html>

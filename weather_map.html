@@ -14,8 +14,11 @@
             integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
             crossorigin="anonymous">
     <link rel="stylesheet" href="./css/weather_map.css">
+    <!--<script src=./js/jquery-2.x-git.js></script>-->
 
-
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
 
 </head>
 <body>
@@ -41,15 +44,13 @@
     <div id="map-canvas"></div>
 
 
-    <script src=./js/jquery-2.x-git.js></script>
-
     <script>
 
         function initMap() {
             var sanA = {lat:29.426791, lng:-98.48602}
             var map = new google.maps.Map(
                 document.getElementById('map-canvas'), {
-                zoom: 8,
+                zoom:4,
                 center: sanA
                 });
 

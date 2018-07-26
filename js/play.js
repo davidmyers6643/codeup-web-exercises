@@ -46,7 +46,10 @@ $('#playButton').click(function () {
     $('#playInput').off();
 });
 alert($('h1').text());
-//
+
+let numbers = [1, 2, 3, 4, 5];
+numbers.map(n => n * 3);
+console.log(numbers);
 // var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
 //
 // $(document).keydown(function(e) {
